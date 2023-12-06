@@ -11,11 +11,10 @@
     item.addEventListener("click", activeLink);
   });
 
-  fetch('characters.json')
+  fetch('https://raw.githubusercontent.com/Nbonbo7/www/main/characters.json')
     .then(response => response.json())
     .then(characterData => {
-      // TextMap.jsonのデータを取得
-      fetch('TextMap.json')
+      fetch('https://raw.githubusercontent.com/Nbonbo7/www/main/Textmap.json')
         .then(response => response.json())
         .then(textMapData => {
           displayCharacterInfo(characterData, textMapData);
