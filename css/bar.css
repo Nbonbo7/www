@@ -1,0 +1,109 @@
+.menu {
+  display: block;
+  position: fixed;
+  /* positionをfixedに変更 */
+  top: 0;
+  left: 0;
+  height: 100vh;
+  /* 画面の高さに合わせる */
+  width: 70px;
+  background-color: #313131;
+  box-shadow: 5px 0 0 #B4A079;
+  border-left: 5px solid #313131;
+  overflow-x: hidden;
+  transition: all 0.45s;
+  z-index: 2;
+  -webkit-user-select: none;
+}
+
+.menu:hover {
+  width: 300px;
+}
+
+.menu ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.menu ul li {
+  list-style: none;
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu ul li:hover {
+  background-color: #20272c5e;
+}
+
+.menu ul li.active {
+  background-color: #B4A079;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.menu ul li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  display: flex;
+}
+
+.menu ul li.active a::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -30px;
+  right: 0;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 #B4A079;
+}
+
+.menu ul li.active a::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  right: 0;
+  border-radius: 50%;
+  box-shadow: 15px -15px 0 #B4A079;
+}
+
+.menu ul li a .icon {
+  display: block;
+  min-width: 45px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #ECE5D8;
+}
+
+.menu ul li a .icon.material-icons {
+  font-size: 1.5em;
+}
+
+.menu ul li a .title {
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.listar {
+  margin-top: 5rem;
+}
+
+@media (width>767px) {
+  .listar {
+    display: none;
+  }
+}

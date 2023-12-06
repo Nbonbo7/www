@@ -1,0 +1,26 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background-color: #1f232b;
+      font-family: "genshin-ja", noto-sans-cjk-jp, "游ゴシック Medium", Arial, sans-serif;
+      color: #ECE5D8;
+      display: flex;
+    }
+
+    .con {
+      border: 2px solid #4B4F59;
+      font-size: 1rem;
+      line-height: 2rem;
+      border-radius: 1rem;
+      background-color: #3E4556;
+      text-align: center;
+    }
+
+    .bord {
+      border: 1px solid #4B4F59
+    }

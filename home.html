@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <title>HOME｜非常食パイモン</title>
+      <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/icon.png">
+  <meta name="description" content="んぼんぼの原神攻略wiki">
+  <meta property="og:description" content="んぼんぼの原神攻略wiki">
+  <meta property="og:type" content="article">
+<meta property="og:image" content="https://genshin.hoyoverse.com/_nuxt/img/f2d6a3a.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #1f232b;
+            font-family: "genshin-ja",noto-sans-cjk-jp,"游ゴシック Medium", Arial, sans-serif;
+            color: #ECE5D8;
+            display: flex;
+        }
+
+        .menu {
+  display: block;
+  position: fixed;
+    top: 0;
+    left: 0;
+            height: 100vh;
+            width: 70px;
+            background-color: #313131;
+            box-shadow: 5px 0 0 #B4A079;
+            border-left: 5px solid #313131;
+            overflow-x: hidden;
+            transition: all 0.45s;
+            z-index: 2;
+            -webkit-user-select: none;
+        }
+
+        .menu:hover {
+            width: 300px;
+        }
+
+        .menu ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        .menu ul li {
+            list-style: none;
+            display: block;
+            position: relative;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu ul li:hover {
+            background-color: #20272c5e;
+        }
+
+        .menu ul li.active {
+            background-color: #B4A079;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .menu ul li a {
+            display: block;
+            position: relative;
+            text-decoration: none;
+            color: white;
+            width: 100%;
+            display: flex;
+        }
+
+        .menu ul li.active a::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: -30px;
+            right: 0;
+            border-radius: 50%;
+            box-shadow: 15px 15px 0 #B4A079;
+        }
+
+        .menu ul li.active a::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 60px;
+            right: 0;
+            border-radius: 50%;
+            box-shadow: 15px -15px 0 #B4A079;
+        }
+
+        .menu ul li a .icon {
+            display: block;
+            min-width: 45px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: #ECE5D8;
+        }
+
+        .menu ul li a .icon.material-icons {
+            font-size: 1.5em;
+        }
+
+        .menu ul li a .title {
+            padding-left: 10px;
+            height: 60px;
+            line-height: 60px;
+            white-space: nowrap;
+        }
+
+    .listar {
+           margin-top: 5rem;
+    }
+
+@media (width>767px){
+    .listar {
+            display: none;
+    }
+}
+
+        main{
+    margin-left: 70px;
+}
+
+        .con {
+            border: 2px solid #4B4F59;
+            padding: 1rem;
+            font-size: 1rem;
+            line-height: 2rem;
+            border-radius: 1rem;
+            background-color: #3E4556;
+            min-width: 18rem;
+            max-width: 30rem;
+            max-height: 6rem;
+            text-align: center;
+            margin: 5rem;
+        }
+
+        .bord{
+            border: 1px solid #4B4F59
+        }
+
+            @media(max-width:1024px) {
+      .con {
+        margin: 0.95rem;
+      }
+
+   </style>
+</head>
+<body>
+    <div class="menu">
+
+        <ul>
+            <li class="list active">
+                <a href="/www/home">
+                    <span class="icon material-icons">home</span>
+                    <span class="title">ホーム</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="/www/Character">
+                    <span class="icon material-icons">person</span>
+                    <span class="title">キャラクター</span>
+                </a>
+            </li>
+            <li class="/www/weapon">
+                <a href="#">
+                    <span class="icon material-icons">menu_book</span>
+                    <span class="title">武器</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="/www/artifact">
+                    <span class="icon material-icons">light_mode</span>
+                    <span class="title">聖遺物</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="/www/atsc">
+                    <span class="icon material-icons">calculate</span>
+                    <span class="title">スコア計算</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="/www/screenshot">
+                    <span class="icon material-icons">photo</span>
+                    <span class="title">スクショ</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="/www/help">
+                    <span class="icon material-icons">help_outline</span>
+                    <span class="title">ヘルプ</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="/www/settings">
+                    <span class="icon material-icons">settings</span>
+                    <span class="title">設定</span>
+                </a>
+            </li>
+         <div class="listar">
+            <li>
+                <a>
+                    <span class="icon material-icons">arrow_forward_ios</span>
+                </a>
+            </li>
+        </div>
+        </ul>
+    </div>
+<main>
+    <div class="con">
+        <!-- ホームページのコンテンツ -->
+        <h1>非常食パイモン</h1>
+      <div class="bord"></div>
+        <p>パイモンに食べられた！</p>
+      </div>
+</main>
+
+    <script>
+        const list = document.querySelectorAll(".list");
+
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove("active")
+            );
+            this.classList.add("active");
+        }
+
+        list.forEach((item) => {
+            item.addEventListener("click", activeLink);
+        });
+    </script>
+</body>
+</html>

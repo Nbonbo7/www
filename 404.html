@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | 非常食パイモン</title>
+<meta name="description" content="んぼんぼの原神攻略wiki">
+<meta property="og:description" content="んぼんぼの原神攻略wiki>
+<meta property="og:image" content="https://upload-static.hoyoverse.com/hk4e/upload/fb/common.jpg">
+<link data-n-head="true" rel="icon" type="image/x-icon" href="https://hoyoverse.com/favicon.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+            body {
+                margin: 0;
+                padding: 0
+                position: static !important;
+                margin: 0
+            }
+
+            .error-index {
+                background-image: url(https://hsr.hoyoverse.com/_nuxt/img/pc-err-bg.dcfa27e.jpg);
+                padding: 8px
+            }
+
+            .error {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                min-height: calc(100vh - 16px);
+                overflow: hidden;
+                box-sizing: border-box
+            }
+
+            .error__404 {
+                min-width: 50vh;
+                max-height: 90%;
+                margin-top: 10vh;
+                -webkit-animation: fadeIn 1s ease-in;
+                animation: fadeIn 1s ease-in
+            }
+
+            .error__text {
+                position: relative;
+                width: 100%;
+                text-align: center
+            }
+
+            .error__sen {
+                text-align: center
+            }
+
+            .error__icon {
+                display: block;
+                width: 500px;
+                margin: 0 auto
+            }
+
+            .error__title {
+                margin: 33px 0;
+                font-size: 32px;
+                line-height: 44px;
+                height: 44px;
+                color: #ECE5D8;
+                margin-bottom: 30px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis
+            }
+
+            .error__content {
+                font-size: 22px;
+                line-height: 30px;
+                height: 30px;
+                color: #8c93a3;
+                opacity: 0.8;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis
+            }
+
+            .error__star {
+                display: block;
+                width: 32px;
+                height: 32px;
+                margin: 20px auto 25px
+            }
+
+            .error__backlink {
+                display: block;
+                margin-bottom: 40px;
+                text-decoration: none;
+                color: #ECE5D8;
+                font-size: 28px;
+                line-height: 36px;
+                opacity: 0.8
+            }
+
+            .error__backlink:hover {
+                opacity: 1
+            }
+
+            .error__pic--404,.error__pic--500 {
+                height: 300px
+            }
+
+            @media screen and (max-width: 750px) {
+                .error-index {
+                    background-image: url(https://hsr.hoyoverse.com/_nuxt/img/h5-err-bg.5ab1fb2.jpg);
+                    background:#393b40;
+                    padding: 4px
+                }
+
+                .error {
+                    background-image: url(https://hsr.hoyoverse.com/_nuxt/img/h5-err-bg.5ab1fb2.jpg);
+                    min-height: calc(100vh - 8px);
+                    box-sizing: border-box
+                }
+
+                .error__404,.error__500 {
+                    width: 540px;
+                    min-width: 0
+                }
+
+                .error__icon {
+                    width: 85%
+                }
+
+                .error__title {
+                    margin: 24px 0;
+                    font-size: 18px;
+                    line-height: 24px;
+                    height: auto;
+                    color: #fff;
+                    margin-bottom: 30px;
+                    white-space: inherit
+                }
+
+                .error__content {
+                    font-size: 14px;
+                    line-height: 20px;
+                    height: auto;
+                    white-space: inherit
+                }
+
+                .error__star {
+                    display: block;
+                    width: 28px;
+                    height: 28px;
+                    margin: 10px auto
+                }
+
+                .error__backlink {
+                    font-size: 16px;
+                    line-height: 20px
+                }
+
+                .error__pic--404 {
+                    width: 100%;
+                    height: auto
+                }
+            }
+
+            @-webkit-keyframes fadeIn {
+                0%,70% {
+                    opacity: 0
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+
+            @keyframes fadeIn {
+                0%,70% {
+                    opacity: 0
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+
+   </style>
+</head>
+<body>
+<div class="error-index">
+  <div class="error">
+    <div class="error__404">
+      <div class="error__text"><img src="https://genshin.hoyoverse.com/_nuxt/img/75b7032.png" class="error__icon">
+        <div class="error__word">
+          <p class="error__title">このページは見つからない</p>
+          <div class="error__sen">
+            <p class="error__content">天空の島へと登ったのかもしれない…</p>
+            <p class="error__content">天理の頂点者と戦っているのかもしれない…</p>
+            <p class="error__content">ほかの世界に行ってしまったのかもしれない…</p>
+          </div> <a href="/www/home" class="error__backlink">ホームページに戻る »</a></div> <img src="https://genshin.hoyoverse.com/_nuxt/img/91aff1f.png" class="error__pic--404"></div>
+    </div>
+  </div>
+</div>
+    <script>
+        const list = document.querySelectorAll(".list");
+
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove("active")
+            );
+            this.classList.add("active");
+        }
+
+        list.forEach((item) => {
+            item.addEventListener("click", activeLink);
+        });
+    </script>
+</body>
+</html>
