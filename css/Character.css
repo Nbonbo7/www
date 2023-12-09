@@ -171,6 +171,21 @@ img {
   background-color: rgba(233, 229, 220, var(--tw-bg-opacity))
 }
 
+.bg-rarityFirst {
+    --tw-bg-opacity: 1;
+    background-color: rgba(129, 132, 134, var(--tw-bg-opacity))
+}
+
+.bg-raritySecond {
+    --tw-bg-opacity: 1;
+    background-color: rgba(90, 151, 122, var(--tw-bg-opacity))
+}
+
+.bg-rarityThird {
+    --tw-bg-opacity: 1;
+    background-color: rgba(89, 135, 173, var(--tw-bg-opacity))
+}
+
 .bg-rarityFourth {
   --tw-bg-opacity: 1;
   background-color: rgba(148, 112, 187, var(--tw-bg-opacity))
