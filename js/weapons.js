@@ -35,22 +35,22 @@ document.addEventListener('DOMContentLoaded', function () {
         var rarityClass;
         switch (rankLevel) {
           case 1:
-            rarityClass = 'rarityFifth';
+            rarityClass = 'rarityFirst';
             break;
           case 2:
-            rarityClass = 'rarityFourth';
+            rarityClass = 'raritySecond';
             break;
           case 3:
             rarityClass = 'rarityThird';
             break;
           case 4:
-            rarityClass = 'raritySecond';
+            rarityClass = 'rarityFourth';
             break;
           case 5:
-            rarityClass = 'rarityFirst';
+            rarityClass = 'rarityFifth';
             break;
           default:
-            rarityClass = 'rarityFifth';
+            rarityClass = 'rarityFirst';
         }
 
         var avatarCard = document.createElement('div');
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   }
-}); // この行を追加
+});
 
 function getWeaponIcon(weapon) {
   return `https://enka.network/ui/${weapon.icon}.png`;
